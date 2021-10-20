@@ -1,0 +1,58 @@
+.table tbody {
+  background-color: white;
+}
+
+.table td:first-child,
+th:first-child,
+.table td:last-child,
+th:last-child {
+  text-align: center;
+}
+
+.table tbody {
+  cursor: pointer;
+}
+
+.table td:last-child {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.table td:last-child:hover {
+  color: #332075;
+}
+
+.input {
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  color: #332075;
+  font-size: 1.5rem;
+  outline: 0;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+  margin-left: 10px;
+}
+
+.input-group .icon {
+  margin-right: 40px;
+  font-size: 4rem;
+  color: #cdcbd7;
+}
+
+
+/*# sourceMappingURL=/search-orders.68a6047d.css.map */

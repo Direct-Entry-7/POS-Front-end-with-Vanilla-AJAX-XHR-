@@ -90,15 +90,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="manage-customers.html" class="nav-link active">
+                <a href="#" class="nav-link active">
                   <i class="nav-icon fas fa-users"></i>
                   <p>Manage Customers</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="manage-stock.html" class="nav-link">
+                <a href="manage-items.html" class="nav-link">
                   <i class="nav-icon fas fa-sitemap"></i>
-                  <p>Manage stock</p>
+                  <p>Manage Items</p>
                 </a>
               </li>
             </ul>
@@ -179,7 +179,11 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">
+                      <button
+                        id="btn-save"
+                        type="submit"
+                        class="btn btn-primary"
+                      >
                         Save
                       </button>
                       <button type="reset" class="btn btn-warning">
@@ -192,7 +196,10 @@
               </div>
               <!-- ./col -->
               <div class="col-lg-6 col-12">
-                <table class="table table-bordered table-hover">
+                <table
+                  id="tbl-customers"
+                  class="table table-bordered table-hover"
+                >
                   <thead>
                     <tr>
                       <th>ID</th>
@@ -201,85 +208,11 @@
                       <th></th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>C001</td>
-                      <td>Pethum Jeewantha</td>
-                      <td>Galle Road, Galle</td>
-                      <td>
-                        <i class="fas fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Pethum Jeewantha</td>
-                      <td>Galle Road, Galle</td>
-                      <td>
-                        <i class="fas fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Pethum Jeewantha</td>
-                      <td>Galle Road, Galle</td>
-                      <td>
-                        <i class="fas fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Pethum Jeewantha</td>
-                      <td>Galle Road, Galle</td>
-                      <td>
-                        <i class="fas fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Pethum Jeewantha</td>
-                      <td>Galle Road, Galle</td>
-                      <td>
-                        <i class="fas fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Pethum Jeewantha</td>
-                      <td>Galle Road, Galle</td>
-                      <td>
-                        <i class="fas fa-trash"></i>
-                      </td>
-                    </tr>
-                  </tbody>
+                  <tbody></tbody>
                   <tfoot>
                     <tr>
                       <td colspan="4">
-                        <ul class="pagination justify-content-center mb-0">
-                          <li class="page-item">
-                            <a class="page-link" href="#">«</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#"> 1 </a>
-                          </li>
-                          <li class="page-item active">
-                            <a class="page-link" href="#"> 2 </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#"> 3 </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#"> 4 </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#"> 5 </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#"> 6 </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">»</a>
-                          </li>
-                        </ul>
+                        <ul class="pagination justify-content-center mb-0"></ul>
                       </td>
                     </tr>
                   </tfoot>
@@ -304,6 +237,6 @@
     </div>
     <!-- ./wrapper -->
 
-    <script src=""></script>
+    <script src="ts/manage-customers.ts"></script>
   </body>
 </html>

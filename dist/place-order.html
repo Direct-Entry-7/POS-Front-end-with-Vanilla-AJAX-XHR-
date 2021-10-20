@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Admin LTE POS: Manage Stock</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <title>Admin LTE POS: Place Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="/icon.83aa3da3.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Google Font: Source Sans Pro -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css"
-    />
+    <link rel="stylesheet" href="/all.min.8f81cac5.css">
     <!-- Theme style -->
-    <link
-      rel="stylesheet"
-      href="node_modules/admin-lte/dist/css/adminlte.min.css"
-    />
+    <link rel="stylesheet" href="/adminlte.min.b317dc71.css">
     <!-- overlayScrollbars -->
-    <link
-      rel="stylesheet"
-      href="node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
-    />
+    <link rel="stylesheet" href="/OverlayScrollbars.min.8a5f85d9.css">
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/manage-stock.css" />
+    <link rel="stylesheet" href="/main.c52e0fe2.css">
+    <link rel="stylesheet" href="/place-order.07f7e542.css">
 
-    <meta name="theme-color" content="#fafafa" />
-  </head>
+    <meta name="theme-color" content="#fafafa">
+  <script src="/place-order.07f7e542.js"></script><script src="/search-orders.js"></script></head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
@@ -43,9 +31,7 @@
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
-              ><i class="fas fa-bars"></i
-            ></a>
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
         </ul>
       </nav>
@@ -63,40 +49,35 @@
         <div class="sidebar">
           <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul
-              class="nav nav-pills nav-sidebar flex-column"
-              data-widget="treeview"
-              role="menu"
-              data-accordion="false"
-            >
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
               <li class="nav-item">
-                <a href="index.html" class="nav-link">
+                <a href="/index.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="place-order.html" class="nav-link">
+                <a href="/place-order.html" class="nav-link active">
                   <i class="nav-icon fas fa-cart-plus"></i>
                   <p>Place Order</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="search-orders.html" class="nav-link">
+                <a href="/search-orders.html" class="nav-link">
                   <i class="nav-icon fas fa-search"></i>
                   <p>Search Orders</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="manage-customers.html" class="nav-link">
+                <a href="/manage-customers.html" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>Manage Customers</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="/manage-stock.html" class="nav-link">
                   <i class="nav-icon fas fa-sitemap"></i>
                   <p>Manage stock</p>
                 </a>
@@ -115,13 +96,13 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Manage Stock</h1>
+                <h1 class="m-0">Place Order</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Manage Stock</li>
+                  <li class="breadcrumb-item active">Place Order</li>
                 </ol>
               </div>
               <!-- /.col -->
@@ -140,6 +121,33 @@
               <div class="col-lg-6 col-12">
                 <div class="card card-primary">
                   <div class="card-header">
+                    <h3 class="card-title">Customer Information</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <!-- form start -->
+                  <form id="quickForm">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="txt-id">Customer ID</label>
+                        <input type="text" name="id" class="form-control" id="txt-id" placeholder="Eg. C001">
+                      </div>
+                      <div class="form-group">
+                        <label for="txt-name">Customer Name</label>
+                        <input type="text" name="name" class="form-control" id="txt-name" placeholder="Customer Name" disabled="">
+                      </div>
+                      <div class="form-group">
+                        <label for="txt-address">Customer Address</label>
+                        <input type="text" name="address" class="form-control" id="txt-address" placeholder="Customer Address" disabled="">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card -->
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="card card-primary">
+                  <div class="card-header">
                     <h3 class="card-title">Item Information</h3>
                   </div>
                   <!-- /.card-header -->
@@ -148,68 +156,49 @@
                     <div class="card-body">
                       <div class="form-group">
                         <label for="txt-code">Item Code</label>
-                        <input
-                          type="text"
-                          name="id"
-                          class="form-control"
-                          id="txt-code"
-                          placeholder="Eg. I001"
-                        />
+                        <input type="text" name="code" class="form-control" id="txt-code" placeholder="Eg. I001">
                       </div>
                       <div class="form-group">
                         <label for="txt-description">Item Description</label>
-                        <input
-                          type="text"
-                          name="description"
-                          class="form-control"
-                          id="txt-description"
-                          placeholder="Description"
-                        />
+                        <input type="text" name="description" class="form-control" id="txt-description" placeholder="Description" disabled="">
                       </div>
                       <div class="form-group">
-                        <label for="nmb-unitPrice">Unit Price (Rs.)</label>
-                        <input
-                          type="number"
-                          name="unitPrice"
-                          class="form-control"
-                          id="nmb-unitPrice"
-                          placeholder="00.00"
-                        />
+                        <label for="nmb-qtyOnHand">Qty. on Hand</label>
+                        <input type="number" name="qtyOnHand" class="form-control" id="nmb-qtyOnHand" placeholder="0" disabled="">
                       </div>
                       <div class="form-group">
-                        <label for="nmb-qtyOnHand">Qty.on Hand</label>
-                        <input
-                          type="number"
-                          name="qtyOnHand"
-                          class="form-control"
-                          id="nmb-qtyOnHand"
-                          placeholder="0"
-                        />
+                        <label for="nmb-unitPrice">Unit Price</label>
+                        <input type="number" name="unitPrice" class="form-control" id="nmb-unitPrice" placeholder="00.00" disabled="">
+                      </div>
+                      <div class="form-group">
+                        <label for="nmb-qty">Qty</label>
+                        <input type="number" name="qty" class="form-control" id="nmb-qty" placeholder="00.00">
                       </div>
                     </div>
-                    <!-- /.card-body -->
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">
-                        Save
-                      </button>
-                      <button type="reset" class="btn btn-warning">
+                    <div class="card-footer d-flex justify-content-end">
+                      <button type="reset" class="btn btn-warning mr-3">
                         Clear
+                      </button>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Add
                       </button>
                     </div>
                   </form>
                 </div>
                 <!-- /.card -->
               </div>
-              <!-- ./col -->
+            </div>
+            <div class="row">
               <div class="col-lg-6 col-12">
                 <table class="table table-bordered table-hover">
                   <thead>
                     <tr>
                       <th>Code</th>
                       <th>Description</th>
-                      <th>Qty.on Hand</th>
+                      <th>Qty</th>
                       <th>Unit Price</th>
-                      <th></th>
+                      <th>Total</th>
+                      <th>Delete</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -218,6 +207,7 @@
                       <td>Description 1</td>
                       <td>10</td>
                       <td>100.00</td>
+                      <td>1000.00</td>
                       <td>
                         <i class="fas fa-trash"></i>
                       </td>
@@ -225,8 +215,9 @@
                     <tr>
                       <td>I002</td>
                       <td>Description 2</td>
-                      <td>20</td>
-                      <td>200.00</td>
+                      <td>10</td>
+                      <td>100.00</td>
+                      <td>1000.00</td>
                       <td>
                         <i class="fas fa-trash"></i>
                       </td>
@@ -234,8 +225,9 @@
                     <tr>
                       <td>I003</td>
                       <td>Description 3</td>
-                      <td>30</td>
-                      <td>300.00</td>
+                      <td>10</td>
+                      <td>100.00</td>
+                      <td>1000.00</td>
                       <td>
                         <i class="fas fa-trash"></i>
                       </td>
@@ -243,8 +235,9 @@
                     <tr>
                       <td>I004</td>
                       <td>Description 4</td>
-                      <td>40</td>
-                      <td>400.00</td>
+                      <td>10</td>
+                      <td>100.00</td>
+                      <td>1000.00</td>
                       <td>
                         <i class="fas fa-trash"></i>
                       </td>
@@ -284,7 +277,27 @@
                   </tfoot>
                 </table>
               </div>
-              <!-- ./col -->
+              <div class="col-lg-6 col-12">
+                <div class="card card-secondary">
+                  <div class="card-header">
+                    <h3 class="card-title">Payment</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <!-- form start -->
+                  <form id="quickForm">
+                    <h1 class="total mt-3 mb-3"><b>Total :</b> Rs. 4,000.00</h1>
+                    <div class="card-footer d-flex justify-content-end">
+                      <button type="reset" class="btn btn-danger mr-3">
+                        Cancel
+                      </button>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Place Order
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card -->
+              </div>
             </div>
             <!-- /.row -->
           </div>
